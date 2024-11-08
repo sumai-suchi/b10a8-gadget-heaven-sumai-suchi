@@ -11,7 +11,7 @@ const Footer = () => {
                    
                 </div>
                 <div className="border border-gray-200 max-w-7xl mx-auto"></div>
-            <footer className="footer ml-28 bg-white text-gray-600 p-10">
+            <footer className="footer  bg-white text-gray-600 p-10">
 
                
                 <nav >

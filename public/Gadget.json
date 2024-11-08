@@ -1,0 +1,285 @@
+[
+    {
+      "product_id": 1,
+      "product_title": "Smartphone Pro X",
+      "product_image": "https://i.ibb.co.com/GPGMDRc/Mobile1.png",
+      "category": "Mobile",
+      "price": 999.99,
+      "description": "A high-end smartphone with stunning display and advanced camera features.",
+      "specification": [
+        "6.7-inch OLED Display",
+        "128GB Storage, 8GB RAM",
+        "48MP Triple Camera System",
+        "5G Connectivity",
+        "4000mAh Battery"
+      ],
+      "availability": true,
+      "rating": 4.7,
+      "brand": "TechCorp",
+      "release_date": "2023-08-15"
+    },
+    {
+      "product_id": 2,
+      "product_title": "Compact Tablet Mini",
+      "product_image": "https://i.ibb.co.com/HGRpyx2/tab1.jpg",
+      "category": "Tablet",
+      "price": 399.99,
+      "description": "A compact tablet for everyday use with a vivid display and ample storage.",
+      "specification": [
+        "8.3-inch LCD Display",
+        "64GB Storage, 4GB RAM",
+        "12MP Rear Camera",
+        "WiFi and LTE Options",
+        "5000mAh Battery"
+      ],
+      "availability": true,
+      "rating": 4.2,
+      "brand": "NextGen",
+      "release_date": "2023-02-10"
+    },
+    {
+      "product_id": 3,
+      "product_title": "Laptop Pro 15",
+      "product_image": "https://i.ibb.co.com/XCvQTP8/laptop.jpg",
+      "category": "Laptop",
+      "price": 1299.99,
+      "description": "Powerful laptop with large display, perfect for professional use.",
+      "specification": [
+        "15.6-inch Retina Display",
+        "256GB SSD, 16GB RAM",
+        "Intel i7 Processor",
+        "Integrated Graphics",
+        "12-hour Battery Life"
+      ],
+      "availability": true,
+      "rating": 4.8,
+      "brand": "PowerPro",
+      "release_date": "2022-09-20"
+    },
+    {
+      "product_id": 4,
+      "product_title": "Laptop UltraBook",
+      "product_image": "https://i.ibb.co.com/B2v01Qj/laptop2.webp",
+      "category": "Laptop",
+      "price": 899.99,
+      "description": "Ultra-slim and lightweight laptop for on-the-go productivity.",
+      "specification": [
+        "13.3-inch Full HD Display",
+        "512GB SSD, 8GB RAM",
+        "Intel i5 Processor",
+        "Integrated Graphics",
+        "14-hour Battery Life"
+      ],
+      "availability": true,
+      "rating": 4.6,
+      "brand": "SlimTech",
+      "release_date": "2023-05-01"
+    },
+    {
+      "product_id": 5,
+      "product_title": "Gaming Beast Laptop",
+      "product_image": "https://i.ibb.co.com/2ZjB1gt/laptop3.webp",
+      "category": "Laptop",
+      "price": 1599.99,
+      "description": "High-performance laptop for gamers with RGB keyboard and powerful graphics.",
+      "specification": [
+        "15.6-inch QHD Display",
+        "1TB SSD, 16GB RAM",
+        "Intel i9 Processor",
+        "NVIDIA GTX 3060",
+        "RGB Backlit Keyboard"
+      ],
+      "availability": true,
+      "rating": 4.9,
+      "brand": "GamerX",
+      "release_date": "2023-04-15"
+    },
+    {
+      "product_id": 6,
+      "product_title": "Everyday Laptop E100",
+      "product_image": "https://i.ibb.co.com/KW9SFdM/laptop4.webp",
+      "category": "Laptop",
+      "price": 549.99,
+      "description": "Affordable laptop for everyday tasks with great battery life.",
+      "specification": [
+        "14-inch HD Display",
+        "256GB SSD, 4GB RAM",
+        "Intel Pentium Processor",
+        "Integrated Graphics",
+        "10-hour Battery Life"
+      ],
+      "availability": true,
+      "rating": 4.3,
+      "brand": "BudgetTech",
+      "release_date": "2022-11-10"
+    },
+    {
+      "product_id": 7,
+      "product_title": "Student Laptop Lite",
+      "product_image": "https://i.ibb.co.com/TL8Fb9Y/laptop5.jpg",
+      "category": "Laptop",
+      "price": 699.99,
+      "description": "Ideal laptop for students with versatile features and durable build.",
+      "specification": [
+        "14-inch Full HD Display",
+        "128GB SSD, 8GB RAM",
+        "Intel i3 Processor",
+        "Integrated Graphics",
+        "8-hour Battery Life"
+      ],
+      "availability": true,
+      "rating": 4.4,
+      "brand": "EduLine",
+      "release_date": "2023-06-18"
+    },
+    {
+      "product_id": 8,
+      "product_title": "Noise-Canceling Headphones",
+      "product_image": "https://i.ibb.co.com/3WwJZSz/Headphone1.jpg",
+      "category": "Headphones",
+      "price": 299.99,
+      "description": "High-quality noise-canceling headphones with immersive audio.",
+      "specification": [
+        "Active Noise Cancelation",
+        "Up to 30 Hours Battery Life",
+        "Bluetooth 5.2",
+        "Quick Charge Feature"
+      ],
+      "availability": true,
+      "rating": 4.5,
+      "brand": "SoundWave",
+      "release_date": "2023-05-10"
+    },
+    {
+      "product_id": 9,
+      "product_title": "Tablet Pro 12",
+      "product_image": "https://i.ibb.co.com/n09Ff0z/tab2.jpg",
+      "category": "Tablet",
+      "price": 799.99,
+      "description": "Professional-grade tablet with high-resolution display and multi-tasking capabilities.",
+      "specification": [
+        "12.9-inch OLED Display",
+        "256GB Storage, 8GB RAM",
+        "12MP Dual Camera System",
+        "WiFi and LTE Options",
+        "8000mAh Battery"
+      ],
+      "availability": true,
+      "rating": 4.7,
+      "brand": "TabMaster",
+      "release_date": "2023-02-10"
+    },
+    {
+      "product_id": 10,
+      "product_title": "Gaming Headphones Xtreme",
+      "product_image": "https://i.ibb.co.com/drJ8z0q/headphone2.jpg",
+      "category": "Headphones",
+      "price": 159.99,
+      "description": "High-fidelity gaming headphones with surround sound and comfortable fit.",
+      "specification": [
+        "7.1 Surround Sound",
+        "Noise-Canceling Mic",
+        "RGB Lighting",
+        "Wired and Wireless Options"
+      ],
+      "availability": true,
+      "rating": 4.6,
+      "brand": "GamerX",
+      "release_date": "2023-03-25"
+    },
+    {
+      "product_id": 11,
+      "product_title": "Convertible Laptop Flex",
+      "product_image": "https://i.ibb.co.com/hc269Yw/laptop6.webp",
+      "category": "Laptop",
+      "price": 1299.99,
+      "description": "Flexible laptop that can be used as a tablet with a 360-degree hinge.",
+      "specification": [
+        "13.5-inch Touchscreen Display",
+        "512GB SSD, 16GB RAM",
+        "Intel i5 Processor",
+        "Integrated Graphics",
+        "Convertible Design"
+      ],
+      "availability": true,
+      "rating": 4.7,
+      "brand": "FlexiTech",
+      "release_date": "2023-07-12"
+    },
+    {
+      "product_id": 12,
+      "product_title": "Compact Mobile Lite",
+      "product_image": "https://i.ibb.co.com/TThn8QM/Mobile2.jpg",
+      "category": "Mobile",
+      "price": 299.99,
+      "description": "Compact smartphone with great battery life and essential features.",
+      "specification": [
+        "5.5-inch HD Display",
+        "32GB Storage, 3GB RAM",
+        "13MP Rear Camera",
+        "4G LTE Connectivity",
+        "3000mAh Battery"
+      ],
+      "availability": true,
+      "rating": 4.2,
+      "brand": "PocketPhone",
+      "release_date": "2023-09-01"
+    },
+    {
+      "product_id": 13,
+      "product_title": "Tablet Basic 10",
+      "product_image": "https://i.ibb.co.com/7p1NK0n/tab3.webp",
+      "category": "Tablet",
+      "price": 249.99,
+      "description": "Affordable tablet with decent performance for everyday tasks.",
+      "specification": [
+        "10.1-inch HD Display",
+        "64GB Storage, 2GB RAM",
+        "8MP Rear Camera",
+        "WiFi Only",
+        "5000mAh Battery"
+      ],
+      "availability": true,
+      "rating": 4.1,
+      "brand": "TabBasic",
+      "release_date": "2023-01-20"
+    },
+    {
+      "product_id": 14,
+      "product_title": "Bluetooth Sports Headphones",
+      "product_image": "https://i.ibb.co.com/8znT823/headphone3.jpg",
+      "category": "Headphones",
+      "price": 79.99,
+      "description": "Lightweight and water-resistant Bluetooth headphones, ideal for sports.",
+      "specification": [
+        "Water Resistant (IPX5)",
+        "Up to 10 Hours Battery Life",
+        "Bluetooth 5.0",
+        "Ear Hooks for Secure Fit"
+      ],
+      "availability": true,
+      "rating": 4.4,
+      "brand": "SportSound",
+      "release_date": "2023-03-02"
+    },
+    {
+      "product_id": 15,
+      "product_title": "High-End Gaming Laptop",
+      "product_image": "https://i.ibb.co.com/jwgHNGp/Laptop7.jpg",
+      "category": "Laptop",
+      "price": 2199.99,
+      "description": "Top-of-the-line gaming laptop with high refresh rate and powerful GPU.",
+      "specification": [
+        "17.3-inch QHD 240Hz Display",
+        "1TB SSD, 32GB RAM",
+        "Intel i9 Processor",
+        "NVIDIA RTX 3080",
+        "Per-Key RGB Keyboard"
+      ],
+      "availability": true,
+      "rating": 4.9,
+      "brand": "GameMaster",
+      "release_date": "2023-10-01"
+    }
+  ]   
+  
