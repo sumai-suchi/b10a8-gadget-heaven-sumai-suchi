@@ -28,8 +28,8 @@ const Items = (items) => {
                                 items.i.description
                             }
                         </p>
-                        <p>Price:${items.i.price}</p>
-                        <button className="btn bg-violet-600 rounded-full">Add to cart</button>
+                        <p className='text-xl font-bold'>Price:${items.i.price}</p>
+                        
                     </div>
                 </div>
             </div>

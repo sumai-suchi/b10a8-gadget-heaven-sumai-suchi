@@ -4,6 +4,7 @@ import { FaShoppingCart } from "react-icons/fa";
 
 const Navbar = () => {
     const Location = useLocation();
+    console.log(Location.pathname)
 
     return (
 
@@ -42,14 +43,15 @@ const Navbar = () => {
                         ${Location.pathname === '/' ? 'text-white' : ' text-black'}`}>Gadget Heaven</a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className={`menu menu-horizontal px-1 text-white
-                        ${Location.pathname === '/' ? 'text-black' : 'bg-white'}`}>
+                <ul className={`menu menu-horizontal px-1 text-black
+                        ${Location.pathname === '/' ? 'text-white' : ''}`}>
                     <li ><Link to='/'>Home</Link></li>
                     <li>
                         <Link to='Static'>Statistic</Link>
 
                     </li>
                     <li><Link to='DashBoard'>DashBoard</Link></li>
+                    <li><Link to='Contact'> Contact</Link></li>
                 </ul>
             </div>
             <div className="navbar-end">

@@ -17,6 +17,8 @@ import DashBoard from './Components/DashBoard/DashBoard';
 
 import Product from './Components/Product/Product';
 import CardDetails from './Components/CardDetails/CardDetails';
+import AuthProvider from './AuthProvider/AuthProvider';
+import Contact from './Components/Contact/Contact';
 
 
 const router = createBrowserRouter([
@@ -75,6 +77,11 @@ const router = createBrowserRouter([
         path:'DashBoard',
         element:<DashBoard></DashBoard>,
         loader:()=>fetch('/Gadget.json')
+      },
+      {
+        path:'Contact',
+        element:<Contact></Contact>,
+        
       }
     ]
   },
@@ -84,11 +91,14 @@ const router = createBrowserRouter([
 
   createRoot(document.getElementById('root')).render(
  
-  
-
     <StrictMode>
+   <AuthProvider>
+      <RouterProvider router={router} />
+      
+    </AuthProvider>
    
-   <RouterProvider router={router} />
-    </StrictMode>,
+    </StrictMode>
+
+    
     )
 

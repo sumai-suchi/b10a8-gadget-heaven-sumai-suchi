@@ -4,14 +4,17 @@ import Banner3 from './Banner3/Banner3';
 import MyComponent from '../MyComponent/MyComponent';
 import { FaShoppingCart } from "react-icons/fa";
 import { AddToLocalCart } from '../../Java/Utility';
+import { useContext, useState } from 'react';
+import { AuthContext } from '../../AuthProvider/AuthProvider';
 
 
 
 
 const CardDetails = () => {
    
-
+  const {setWish,wish}=useContext(AuthContext)
   const id = useParams()
+  const [isDisable,SetIsDisable]=useState(false)
 
   console.log(id.id)
 
@@ -24,7 +27,21 @@ const CardDetails = () => {
 
   }
 
+  const handleWishList=(item)=>
+  {
+       if( wish.length === 0 )
+       {
+         wish.push(item)
+       }
+       else
+       {
+        
+        const newWish=[...wish,item]
+        setWish(newWish)
+       }
+  }
 
+  console.log(wish)
 
   const data = useLoaderData()
   console.log(data)
@@ -74,11 +91,14 @@ const CardDetails = () => {
           <MyComponent  rating={s.rating}></MyComponent>
 
           
-          <div className="card-actions " onClick={() => handleCartItems(s.product_id)}>
+          <div className="card-actions " >
             <button className="btn w-36 h-6 bg-violet-600 rounded-full text-white
-        ">Add to cart<FaShoppingCart /></button>
+        " onClick={() => handleCartItems(s.product_id)}>Add to cart<FaShoppingCart /></button>
 
-            <button className="btn rounded-full">
+            <button className='btn rounded-full' disabled={isDisable} onClick={()=> {
+              handleWishList(s.product_id)
+              SetIsDisable(!isDisable)
+            }}>
 
               <svg
                 xmlns="http://www.w3.org/2000/svg"
