@@ -6,39 +6,74 @@ import { FaShoppingCart } from "react-icons/fa";
 import { AddToLocalCart } from '../../Java/Utility';
 import { useContext, useState } from 'react';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
+import { toast, ToastContainer } from 'react-toastify';
 
 
 
 
 const CardDetails = () => {
-   
-  const {setWish,wish}=useContext(AuthContext)
+
+  const { setWish, wish } = useContext(AuthContext)
   const id = useParams()
-  const [isDisable,SetIsDisable]=useState(false)
+  const [isDisable, SetIsDisable] = useState(false)
 
   console.log(id.id)
 
-  
-  
 
-  const handleCartItems=(item)=>
-  {
-     AddToLocalCart(item)
+
+
+  const handleCartItems = (item) => {
+
+    toast.success('🦄 Wow! added to cart', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      
+    });
+    AddToLocalCart(item)
+
+    
 
   }
 
-  const handleWishList=(item)=>
-  {
-       if( wish.length === 0 )
-       {
-         wish.push(item)
-       }
-       else
-       {
+  const handleWishList = (item) => {
+    if (wish.length === 0) {
+      wish.push(item)
+      toast.success('🦄 Wow! added to wishList', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
         
-        const newWish=[...wish,item]
-        setWish(newWish)
-       }
+      });
+    }
+    else {
+
+      const newWish = [...wish, item]
+      setWish(newWish)
+
+      toast.success('🦄 Wow! added to wishList', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        
+      });
+    }
+
   }
 
   console.log(wish)
@@ -83,19 +118,31 @@ const CardDetails = () => {
           <p className='text-gray-500'>
             <span className='font-bold'>Specification:</span>
             {
-              s.specification.map((t,i) => <li key={i}>{t}</li>)
+              s.specification.map((t, i) => <li key={i}>{t}</li>)
             }
 
           </p>
 
-          <MyComponent  rating={s.rating}></MyComponent>
+          <MyComponent rating={s.rating}></MyComponent>
 
-          
+          <ToastContainer
+            position="top-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick={false}
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+            
+          />
           <div className="card-actions " >
             <button className="btn w-36 h-6 bg-violet-600 rounded-full text-white
         " onClick={() => handleCartItems(s.product_id)}>Add to cart<FaShoppingCart /></button>
 
-            <button className='btn rounded-full' disabled={isDisable} onClick={()=> {
+            <button className='btn rounded-full' disabled={isDisable} onClick={() => {
               handleWishList(s.product_id)
               SetIsDisable(!isDisable)
             }}>
@@ -119,7 +166,7 @@ const CardDetails = () => {
 
 
           </div>
-       
+
         </div>
       </div>
     </div>

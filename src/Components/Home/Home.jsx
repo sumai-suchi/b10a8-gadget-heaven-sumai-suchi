@@ -18,7 +18,7 @@ const Home = () => {
             
             <BannerSection></BannerSection>
             <AbsoluteSection></AbsoluteSection>
-            {/* <Gadgets></Gadgets> */}
+         
             <div className="max-h-full">
             <Outlet></Outlet>
             </div>
