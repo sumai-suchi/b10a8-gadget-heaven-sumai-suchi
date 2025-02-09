@@ -136,7 +136,7 @@ const DashBoard = () => {
 
 
             <div className='flex justify-between mt-2 mx-4'>
-                <div><p className='font-bold'>Cart</p></div>
+                <div><p className='font-bold'></p></div>
                 <div className="flex justify-center items-center ">
                     <p className="font-bold">Total Cost:  {
 
